@@ -22,11 +22,17 @@ body {
   background-color: #f4f4f4;
   padding: 20px;
   border-right: 1px solid #ddd;
+  overflow-y: auto;
 }
 
 .sidebar h1 {
   font-size: 1.5rem;
   margin-bottom: 20px;
+}
+
+.sidebar h2 {
+  font-size: 1.2rem;
+  margin: 20px 0 10px;
 }
 
 .sidebar ul {
@@ -52,8 +58,40 @@ body {
   padding: 20px;
 }
 
-.challenge-area {
+.challenge-area,
+.docs-area {
   border: 1px dashed #ccc;
   padding: 20px;
   min-height: 300px;
+  display: none;
+}
+
+.challenge-area.active,
+.docs-area.active {
+  display: block;
+}
+
+/* Estilos específicos para la documentación */
+.docs-area {
+  font-size: 1rem;
+}
+
+.docs-area h1 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.docs-area h2 {
+  font-size: 1.25rem;
+  margin: 15px 0 10px;
+}
+
+.docs-area p {
+  margin-bottom: 10px;
+}
+
+.docs-area code {
+  background-color: #f0f0f0;
+  padding: 2px 5px;
+  border-radius: 3px;
 }
