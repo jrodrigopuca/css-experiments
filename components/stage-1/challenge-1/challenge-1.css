@@ -1,33 +1,22 @@
-.layout-container {
-  display: grid;
-  grid-template-areas:
-    "header header"
-    "sidebar main"
-    "footer footer";
-  gap: 10px;
-  height: 100%;
+p {
+	color: black; /*[0,0,1,0]*/
+}
+.wrapper .text {
+	color: blue; /*[0,0,2,0]*/
+}
+#main p.highlight {
+	color: green; /*[0,1,1,1]*/
+}
+[data-type="important"] {
+	color: red; /*[0,0,1,0]*/
+}
+.content .highlight[data-type="important"] {
+	color: purple; /*[0,0,3,0]*/
+}
+.text {
+	color: orange !important; /*[0,0,1,0] important!*/
 }
 
-.header {
-  grid-area: header;
-  background-color: #ff9999;
-  padding: 20px;
-}
-
-.sidebar-content {
-  grid-area: sidebar;
-  background-color: #99ff99;
-  padding: 20px;
-}
-
-.main {
-  grid-area: main;
-  background-color: #9999ff;
-  padding: 20px;
-}
-
-.footer {
-  grid-area: footer;
-  background-color: #ffff99;
-  padding: 20px;
+#main .content .highlight[data-type="important"]{
+  color: purple; /*[0,1,3,0]*/
 }

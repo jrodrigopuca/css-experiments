@@ -1,0 +1,33 @@
+.layout-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main"
+    "footer footer";
+  gap: 10px;
+  height: 100%;
+}
+
+.header {
+  grid-area: header;
+  background-color: #ff9999;
+  padding: 20px;
+}
+
+.sidebar-content {
+  grid-area: sidebar;
+  background-color: #99ff99;
+  padding: 20px;
+}
+
+.main {
+  grid-area: main;
+  background-color: #9999ff;
+  padding: 20px;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #ffff99;
+  padding: 20px;
+}
