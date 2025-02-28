@@ -1,0 +1,77 @@
+/* Reset básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Configuración raíz para unidades relativas */
+html {
+  font-size: 16px; /* Base para rem */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 1rem; /* 16px */
+}
+
+/* Contenedor para manejar márgenes colapsados */
+.card-container {
+  overflow: hidden; /* Evita colapso de márgenes hacia afuera */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem; /* Espacio entre tarjetas */
+}
+
+/* Tarjeta de producto */
+.product-card {
+  width: clamp(200px, 30vw, 400px); /* Ancho responsivo */
+  background-color: #f9f9f9;
+  border: 0.125rem solid #ccc; /* 2px en base a 16px */
+  border-radius: 0.5rem;
+  padding: 1em; /* Relativo al tamaño de fuente del elemento */
+  margin-bottom: 1rem; /* Márgenes colapsados controlados por el contenedor */
+  aspect-ratio: 3 / 4; /* Proporción fija */
+}
+
+/* Imagen simulada */
+.card-image {
+  width: 100%;
+  height: 50%; /* Relativo al alto de la tarjeta */
+  background-color: #ddd;
+  border-radius: 0.25rem;
+}
+
+/* Contenido */
+.card-content {
+  padding: 1rem 0.5rem; /* Padding dinámico */
+}
+
+h2 {
+  font-size: clamp(1rem, 2.5vw, 1.5rem); /* Escalable */
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+/* Botón */
+.card-button {
+  padding: 0.5em 1em;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Responsividad adicional */
+@media (max-width: 600px) {
+  .product-card {
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+  }
+}
