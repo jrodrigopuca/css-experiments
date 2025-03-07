@@ -43,6 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
 				const stage = path.split("/")[1];
 				const challenge = path.split("/")[2];
 				loadStylesheet(`components/${stage}/${challenge}/${challenge}.css`);
+
+				// Ejecutar código específico de cada desafío
+				if (path.includes("challenge-3.html")) {
+					console.log("Cargando Challenge 3");
+					initializeChallenge3();
+				}
 			})
 			.catch((err) => {
 				challengeContainer.innerHTML = "<p>Error al cargar el desafío.</p>";
