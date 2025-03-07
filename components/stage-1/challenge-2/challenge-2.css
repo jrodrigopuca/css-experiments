@@ -28,8 +28,8 @@ body {
   width: clamp(200px, 30vw, 400px); /* Ancho responsivo */
   background-color: #f9f9f9;
   border: 0.125rem solid #ccc; /* 2px en base a 16px */
-  border-radius: 0.5rem;
-  padding: 1em; /* Relativo al tamaño de fuente del elemento */
+  border-radius: 1.5rem;
+  padding: calc(1rem + 2vw); /* Relativo al tamaño de fuente del elemento */
   margin-bottom: 1rem; /* Márgenes colapsados controlados por el contenedor */
   aspect-ratio: 3 / 4; /* Proporción fija */
 }
@@ -37,7 +37,7 @@ body {
 /* Imagen simulada */
 .card-image {
   width: 100%;
-  height: 50%; /* Relativo al alto de la tarjeta */
+  height: 20ch; /* Relativo al alto de la tarjeta */
   background-color: #ddd;
   border-radius: 0.25rem;
 }
@@ -72,6 +72,6 @@ p {
 /* Responsividad adicional */
 @media (max-width: 600px) {
   .product-card {
-    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas */
+    width: 100%; /* Ocupa todo el ancho en pantallas pequeñas*/ 
   }
 }
