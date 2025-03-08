@@ -67,7 +67,14 @@ document.addEventListener("DOMContentLoaded", () => {
 	}
 
 	function loadDocsList() {
-		const docFiles = ["N01S01.md", "N01S02.md", "N01S03.md", "N01S04.md"];
+		const docFiles = [
+			"N01S01.md",
+			"N01S02.md",
+			"N01S03.md",
+			"N01S04.md",
+			"N02S01.md",
+			"N02S02.md",
+		];
 		docFiles.forEach((file) => {
 			const li = document.createElement("li");
 			const a = document.createElement("a");
