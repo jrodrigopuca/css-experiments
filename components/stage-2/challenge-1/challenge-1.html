@@ -1,0 +1,27 @@
+<!--
+Crea una barra de navegación horizontal 
+que se adapte a pantallas pequeñas
+convirtiéndose en un menú vertical o colapsable.
+-->
+<nav class="navbar">
+	<input type="checkbox" id="nav-toggle" class="navbar__checkbox" checked="" />
+	<label for="nav-toggle" class="navbar__toggle" aria-label="Toggle navigation"
+		>☰</label
+	>
+	<ul class="navbar__list">
+		<li class="navbar__item"><a href="#inicio">Inicio</a></li>
+		<li class="navbar__item"><a href="#servicios">Servicios</a></li>
+		<li class="navbar__item"><a href="#productos">Productos</a></li>
+		<li class="navbar__item"><a href="#contacto">Contacto</a></li>
+	</ul>
+
+	<ul class="navbar__list--collapsed">
+		<li class="navbar__item"><a href="#inicio">Inicio</a></li>
+		<li class="navbar__item"><a href="#servicios">Servicios</a></li>
+		<li class="navbar__item"><a href="#productos">Productos</a></li>
+		<li class="navbar__item"><a href="#contacto">Contacto</a></li>
+	</ul>
+</nav>
+<div>
+	otro contenido
+</div>
