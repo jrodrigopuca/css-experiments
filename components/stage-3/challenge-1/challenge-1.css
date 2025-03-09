@@ -1,0 +1,18 @@
+.effect .btn{
+  background-color: rgb(99, 99, 235);
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(120, 97, 232, 0.5);
+  
+  transition: background-color 0.8s ease, transform 0.8s ease-out, box-shadow 0.8s ease;
+
+}
+
+.effect .btn:hover{
+  background-color: rgb(76, 126, 244);
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(74, 190, 252, 0.8);
+}

@@ -1,0 +1,28 @@
+.menu{
+  position: relative;
+}
+
+.menu__options {
+  opacity: 0;              /* Hace el menú invisible */
+  transform: translateY(-10px); /* Lo desplaza ligeramente hacia arriba */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;    /* Desactiva clics cuando está oculto */
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.menu__link{
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+/* Aqui se hace la magia de hacer aparecer el menú */
+.menu:hover .menu__options {
+  opacity: 1;              /* Hace el menú visible */
+  transform: translateY(0); /* Lo devuelve a su posición original */
+  background-color: bisque; /* Cambia el color de fondo */
+  transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+  pointer-events: auto;    /* Activa clics cuando está visible */
+}
