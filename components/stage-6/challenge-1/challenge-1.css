@@ -1,0 +1,46 @@
+.dynamic--text__overlay {
+	color: white;
+	mix-blend-mode: overlay;
+	font-size: 3rem;
+}
+.dynamic--text__difference {
+	color: white;
+	mix-blend-mode: difference;
+	font-size: 3rem;
+}
+.dynamic--text__hue {
+	color: white;
+	mix-blend-mode: hue;
+	font-size: 3rem;
+}
+.dynamic--text__luminosity {
+	color: white;
+	mix-blend-mode: luminosity;
+	font-size: 3rem;
+}
+.dynamic--text__saturation {
+	color: white;
+	mix-blend-mode: saturation;
+	font-size: 3rem;
+}
+
+.dynamic--background {
+  background: linear-gradient(90deg, rgb(212, 23, 23), rgb(50, 50, 227));
+  background-size: 200% 200%;
+  animation: move 2s infinite linear;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
