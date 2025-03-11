@@ -1,0 +1,46 @@
+:root {
+	--btn-bg-color: #f8f9fa;
+  --btn-bg-color-danger: #dc3545;
+	--btn-border: 1px solid #f8f9fa;
+	--btn-color: #424141;
+}
+
+.btn-group {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 10px;
+
+}
+
+.btn {
+  width: 10em;
+  border: var(--btn-border);
+  color: var(--btn-color);
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(90%);
+  }
+}
+
+.btn:not(.btn--danger, .btn--success) {
+  background-color: var(--btn-bg-color);
+}
+
+.btn--danger {
+  background-color: var(--btn-bg-color-danger);
+  color: white;
+}
+
+.btn--success {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn--large {
+  width: 25em;
+}

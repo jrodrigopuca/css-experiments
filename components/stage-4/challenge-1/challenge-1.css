@@ -1,0 +1,30 @@
+:root {
+  --bg-color: #ebebeb;
+  --image-bg-color: #2e2727;
+  --text-color: #1b1919;
+}
+
+.theme__toggle:checked ~ .theme__card {
+  --bg-color: #2e2727;
+  --image-bg-color: #dcdcdc;
+  --text-color: #dcdcdc;
+}
+
+.theme__card{
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  gap: 1rem;
+}
+
+.theme__card__image{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: var(--image-bg-color);
+}
