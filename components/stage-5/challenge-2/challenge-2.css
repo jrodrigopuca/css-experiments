@@ -1,0 +1,28 @@
+.container--parent {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: turquoise;
+  container-type: inline-size; /* define un tipo de @container */
+}
+
+.container--child {
+  width: 50%;
+  height: 50%;
+  background-color: blue;
+  transition: width 0.5s, height 0.5s;
+}
+
+/*
+  al hacer hover sobre el contenedor padre, el contenedor hijo
+  cambiará su tamaño a 70% de su tamaño original
+*/
+@container (max-width: 500px) {
+  .container--child {
+    width: 70%;
+    height: 70%;
+    background-color: red;
+  }
+}
