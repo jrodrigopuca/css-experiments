@@ -1,0 +1,16 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-rows: masonry; /* Propiedad experimental */
+  gap: 10px;
+}
+
+.gallery__item {
+  overflow: hidden;
+}
+
+.gallery__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
